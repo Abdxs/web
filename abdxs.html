@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal de E. Abdias Ramos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+        
+        body {
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            background: linear-gradient(45deg, #001f3f, #004080); /* Gradiente de azul muy oscuro a azul oscuro */
+            color: white;
+            padding: 20px;
+            margin: 0;
+            position: relative; /* Necesario para posicionar el búho en relación a la página */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border: 2px solid blue;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px; /* Ajusta el tamaño de la foto de perfil */
+            height: 100px; /* Ajusta el tamaño de la foto de perfil */
+            object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */
+        }
+        .header h1 {
+            font-family: 'Libre Baskerville', serif;
+            color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        a img {
+            width: 20px; /* Tamaño de los íconos de redes sociales */
+            height: 20px;
+            margin-right: 8px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        .owl-emoji {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2rem; /* Ajusta el tamaño del emoji si es necesario */
+            z-index: 1000; /* Asegura que el emoji esté sobre otros elementos */
+            cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.pinimg.com/originals/49/52/07/4952073ec4df3d4102b5338b4bcee54a.jpg" alt="Foto de E. Abdias Ramos">
+        <h1>E. Abdias Ramos</h1>
+    </div>
+    <p>Bienvenido a mi página personal.</p>
+    <h2>Redes Sociales</h2>
+    <ul>
+        <li>
+            <a href="https://facebook.com/Im.abdxe15" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo"> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/tu-perfil" target="_blank">
+                <img src="https://www.rockandpop.cl/wp-content/uploads/2023/07/Nuevo-logo-de-Twitter.jpg" alt="X Logo"> X
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/Im.abdxe15" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"> Instagram
+            </a>
+        </li>
+    </ul>
+    <div class="owl-emoji" onclick="showMessage()">🦉</div>
+
+    <script>
+        function showMessage() {
+            alert("vidajena te observo\nNINGUN SISTEMA ES SEGURO⚠️");
+        }
+    </script>
+</body>
+</html>
